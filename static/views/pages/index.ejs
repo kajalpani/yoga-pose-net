@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body>
+  <%- include('../partials/nav'); %>
+
+  <main role="main">
+
+    <%#Main jumbotron for a primary marketing message or call to action%>
+    <div class="jumbotron">
+      <div class="container" style="color:white;">
+        <h1 class="display-3">Welcome!</h1>
+        <p>Start your Yoga Practice today with the help of Deep Learning in this website.</p>
+        <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Yoga Body Pose (Video) </h2>
+          <p>Estimate Yoga body pose by posing infront of webcam and get the correct Yoga Pose estimation on th fly! </p>
+          <p><a class="btn btn-secondary" href="/body_pose" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Yoga Body Pose (Single Image)</h2>
+          <p>Estimate Yoga body pose by uploading yoga posture image and get the correct Yoga Pose estimation. </p>
+          <p><a class="btn btn-secondary" href="/image_pose" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Yoga Hand Mudra</h2>
+          <p>Estimate Yoga hand pose by posing infront of webcam different Yoga Hand mudras and get the correct Yoga Hand Pose estimation</p>
+          <p><a class="btn btn-secondary" href="/yoga_mudra" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+    </div>
+  </main>
+
+  <footer class="container">
+    <p>&copy; Yoga Pose Estimation 2020-2021</p>
+  </footer>
+
+  <%- include('../partials/dependency'); %>
+
+  </body>
+</html>

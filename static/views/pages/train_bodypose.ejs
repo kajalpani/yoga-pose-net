@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%- include('../partials/head'); %>
+		<style>
+			canvas {
+			  display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<%- include('../partials/nav'); %>
+		<main role="main" class="container">
+			<div class="row">
+				<div class="col-md-8 blog-main">
+					<h3 class="pb-3 mb-4 font-italic border-bottom">
+						Yoga Pose Estimation
+					</h3>
+	      		</div>
+	  		</div>
+    		<div class="row">
+				<div class="col-6 text-center">
+					<h2 class="ml-3">Status</h2>
+					<p class="ml-3" id="label1"></p>
+				</div>
+				<%#<div class="card col-6 text-white bg-info" style="width: 18rem;">
+				  <div class="card-body">
+				    <h5 class="card-title">Instructions</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Follow below point by point:</h6>
+				    <p class="card-text">Press any key to give a pose</p>
+				    <p class="card-text">After lable is collecting, strike a pose</p>
+				    <p class="card-text">when label is waiting, press another key and strike different pose</p>
+				    <p class="card-text">After that, press s to save model</p>
+				  </div>
+				</div>%>
+		  	</div>
+		</main>
+		<script src="../../js/train_bodypose.js"></script>
+		<%- include('../partials/dependency'); %>
+	</body>
+</html>

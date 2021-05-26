@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%- include('../partials/head'); %>
+</head>
+<body>
+    <%- include('../partials/nav'); %>
+    <main role="main" class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="progress progress-bar progress-bar-striped progress-bar-animated mb-2">
+          Loading Model
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center">    
+        <div class="row content">
+            <div class="col-sm-8 text-left"> 
+              <h1>Welcome</h1>
+              <p>Upload a Yoga pose Image to detect.</p>
+              <%#<p><a class="btn btn-secondary" href="#" role="button" id="upload_btn" onclick="myFunction()">Upload &raquo;</a></p>%>
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-6">
+        <input id="image-selector" class="form-control border-0" type="file" />
+      </div>
+      <div class="col-6">
+        <button id="predictBtn" class="btn btn-primary float-right">
+          Predict
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-6">
+        <h2 class="ml-3">Image</h2>
+        <img id="selected-image" class="ml-3" width="250" alt="" />
+      </div>
+      <div class="col-6">
+        <h2 class="ml-3">Predictions</h2>
+        <ol id="prediction-list"></ol>
+      </div>
+    </div>
+  </div>
+</main>
+  <script src="../../js/image_pose.js"></script>
+  <%- include('../partials/dependency'); %>
+</body>
+</html>
